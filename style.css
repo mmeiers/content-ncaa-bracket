@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*turn of text highlight*/
+html {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+/* background animation */
+#gradient {
+    height:100%;
+    width:100%;
+    margin:0;
+    overflow:hidden;
+    background-size:contain; 
+}
+
+#background {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+#background img {
+    min-width:100%;
+	-webkit-animation-duration: 30s;
+    -webkit-animation-name: slidein;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes "slidein" {
+ 5% {
+   -webkit-transform: scale(1) translate3d(-50%, 0%, 0px);
+ }
+	
+25% {
+   -webkit-transform: scale(1) translate3d(-50%, 0%, 0px);
+ }	
+	
+ 30% {
+   -webkit-transform: scale(1) translate3d(-50%, -50%, 0px);
+ }
+50% {
+   -webkit-transform: scale(1) translate3d(-50%, -50%, 0px);
+ }	
+	
+ 55% {
+   -webkit-transform: scale(1) translate3d(0%, -50%, 0px);
+ }
+	
+75% {
+   -webkit-transform: scale(1) translate3d(0%, -50%, 0px);
+ }
+	
+80% {
+   -webkit-transform: scale(1) translate3d(0%, 0%, 0px);
+ }	
+	
+}
